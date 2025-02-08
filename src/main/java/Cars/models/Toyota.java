@@ -1,4 +1,5 @@
-package org.example;
+package Cars.models;
+
 public class Toyota extends Car {
 
     private boolean hybrid;

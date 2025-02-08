@@ -1,4 +1,4 @@
-package org.example;
+package Cars.models;
 
 public class Mercedes extends Car {
 
