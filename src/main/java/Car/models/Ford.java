@@ -1,5 +1,7 @@
-package Cars.models;
+package Car.models;
 
+
+import Car.Car;
 
 public class Ford extends Car {
 

@@ -1,4 +1,6 @@
-package Cars.models;
+package Car.models;
+
+import Car.Car;
 
 public class Suzuki extends Car {
 
