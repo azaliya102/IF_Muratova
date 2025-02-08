@@ -1,4 +1,4 @@
-package org.example;
+package Car;
 
 public abstract class Car {
     private int manufactureYear;
