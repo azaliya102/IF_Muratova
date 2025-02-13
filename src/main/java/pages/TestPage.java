@@ -27,15 +27,4 @@ public class TestPage {
         searchInput.setValue(taskName).pressEnter();
         taskTitle.shouldBe(Condition.visible, Duration.ofSeconds(10));
     }
-
-    public void printProgressBar(int total, int current) {
-        int progressSize = 20;
-        int filledHearts = (int) ((double) current / total * progressSize);
-
-        StringBuilder progressBar = new StringBuilder("Прогресс: ");
-        progressBar.append("❤️".repeat(filledHearts));
-        progressBar.append("🤍".repeat(progressSize - filledHearts));
-
-        System.out.println(progressBar);
-    }
 }

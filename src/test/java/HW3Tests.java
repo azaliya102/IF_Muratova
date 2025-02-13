@@ -59,7 +59,6 @@ public class HW3Tests {
         Selenide.refresh();
         int endNumberTask = testPage.countTask();
         assertEquals(startNumberTask + 1, endNumberTask, "количество должно увеличиться на 1");
-        testPage.printProgressBar(50, endNumberTask % 50);
     }
 
     @DisplayName("Check fields by task TestSeleniumATHomework")
