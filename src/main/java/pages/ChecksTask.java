@@ -6,8 +6,10 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class ChecksTask {
-    private static final SelenideElement userProfile = $x("//a[@id='header-details-user-fullname']");
-    private static final SelenideElement subNavTitle = $x("//h1/span[@id='issues-subnavigation-title']");
+    private static final SelenideElement userProfile = $x("//a[@id='header-details-user-fullname']")
+            .as("Уголок пользователя");
+    private static final SelenideElement subNavigationTitle = $x("//h1/span[@id='issues-subnavigation-title']")
+            .as("Заголовок \"Открытые задачи\"");
 
     public static Boolean isUserProfileDisplayed() {
         waitSignIn();
@@ -19,7 +21,6 @@ public class ChecksTask {
     }
 
     public static Boolean isTitleExist(String title) {
-        return subNavTitle.getText().equals(title);
+        return subNavigationTitle.getText().equals(title);
     }
-
 }
